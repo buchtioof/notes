@@ -1,0 +1,8 @@
+site_name: Les notes rigolotes de ramzgang
+nav:
+  - Home: index.md
+  - Cheatsheets:
+    - cheat/2025-11-28.md
+    - cheat/2026-01-22.md
+  - Grabber:
+    - grabber/2025-12-05.md
