@@ -470,6 +470,39 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#les-caracteres-dassociations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les caractères d'associations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissions-et-utilisateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissions et Utilisateurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lecture-et-recherche-dans-les-fichiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture et recherche dans les fichiers
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -872,6 +905,39 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#les-caracteres-dassociations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les caractères d'associations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissions-et-utilisateurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissions et Utilisateurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lecture-et-recherche-dans-les-fichiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lecture et recherche dans les fichiers
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -926,6 +992,34 @@
 - copie</p>
 <p><code>mv [options] [source] [destination]</code>
 - déplace</p>
+<h3 id="les-caracteres-dassociations">Les caractères d'associations</h3>
+<p><code>|</code> (le pipe)
+- prend le résultat de la commande de gauche et le donne à celle de droite
+- ex: <code>ls -la | grep "***"</code> (liste tout, mais n'affiche que les lignes avec "***")</p>
+<p><code>&gt;</code> et <code>&gt;&gt;</code>
+- envoie le résultat d'une commande dans un fichier texte
+- <code>&gt;</code> écrase le fichier / <code>&gt;&gt;</code> ajoute à la fin sans effacer
+- ex: <code>echo "coucou" &gt; fichier.txt</code></p>
+<h3 id="permissions-et-utilisateurs">Permissions et Utilisateurs</h3>
+<p><code>chmod [droits] [fichier]</code>
+- change les permissions d'un fichier (qui peut lire/écrire/exécuter)
+- <code>chmod +x [fichier]</code> rend un script exécutable (très important)
+- <code>chmod 777 [fichier]</code> donne tous les droits à tout le monde (dangereux mais ça dépanne)</p>
+<p><code>chown [user]:[groupe] [fichier]</code>
+- change le propriétaire du fichier (si t'as copié un truc en sudo et que tu peux plus le toucher)</p>
+<h3 id="lecture-et-recherche-dans-les-fichiers">Lecture et recherche dans les fichiers</h3>
+<p><code>cat [fichier]</code>
+- affiche tout le contenu d'un fichier d'un coup dans le terminal
+- utile pour les petits fichiers, sinon ça inonde l'écran</p>
+<p><code>less [fichier]</code>
+- affiche le contenu page par page (on peut scroller)
+- appuyer sur <code>q</code> pour quitter</p>
+<p><code>head [fichier]</code> / <code>tail [fichier]</code>
+- affiche juste le début (<code>head</code>) ou la fin (<code>tail</code>) d'un fichier
+- <code>tail -f [fichier]</code> hyper utile pour voir les logs en direct (ça attend les nouvelles lignes)</p>
+<p><code>grep [mot] [fichier]</code>
+- cherche un mot ou une phrase spécifique dans un fichier (le ctrl+f du terminal)
+- -r pour chercher dans tous les dossiers (recursive) / -i pour ignorer les majuscules</p>
 
 
 
