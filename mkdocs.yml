@@ -2,9 +2,34 @@ site_name: Les notes rigolotes de ramzgang
 repo_name: ramzouille/notes
 repo_url: https://git.legaragenumerique.fr/ramzouille/Notes
 theme:
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: lucide/sun-moon
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      accent: deep purple
+      toggle:
+        icon: lucide/sun
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      accent: purple
+      toggle:
+        icon: lucide/moon
+        name: Switch to light mode
   icon:
     repo: fontawesome/brands/git-alt
-
+extra_css:
+  - stylesheets/index.css
 nav:
   - Accueil: index.md
   - Cheatsheets:
