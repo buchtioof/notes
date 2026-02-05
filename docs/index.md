@@ -1,17 +1,13 @@
-# Sommaire
+# Bienvenue dans les notes de ramzgang
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<img src="https://media1.tenor.com/m/ZTT94KgxLEUAAAAd/bassem-rire.gif" alt="tk completement sous frozen" width="600" height="400">
 
-## Commands
+## Structure
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+-> cheatsheets (Notes pour les nuls)
 
-## Project layout
+-> learn (Notes sur les projets)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+-> projects (Notes sur des nouveaux trucs que j'utilise) 
+
+*avant le 28/11 y'a rien a gratter, j'installais linux pour la 9387e fois*
