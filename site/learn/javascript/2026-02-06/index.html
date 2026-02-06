@@ -776,14 +776,25 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Asynchrone et promesses (promise)">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cest-quoi-asynchrone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C'est quoi Asynchrone ?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C&#x27;est quoi Asynchrone ?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-le-monde-sans-asynchrone-lenfer" class="md-nav__link">
+  <a href="#1-sans-asynchrone" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Le monde SANS Asynchrone (L'enfer)
+        1. SANS Asynchrone
       
     </span>
   </a>
@@ -791,10 +802,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-le-monde-avec-asynchrone-la-vie-reelle" class="md-nav__link">
+  <a href="#2-avec-asynchrone" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Le monde AVEC Asynchrone (La vie réelle)
+        2. AVEC Asynchrone
       
     </span>
   </a>
@@ -802,21 +813,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-cest-quoi-la-promise" class="md-nav__link">
+  <a href="#3-cest-quoi-cette-promesse-promise" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. C'est quoi la "Promise" ?
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retour-au-code-check-filesjs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Retour au code (check-files.js)
+        3. C'est quoi cette promesse ? (Promise)
       
     </span>
   </a>
@@ -825,6 +825,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple-avec-check-files-tp-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple avec check-files (TP 2)
+      
+    </span>
+  </a>
   
 </li>
       
@@ -848,8 +859,11 @@
 
 <h1 id="js-en-gros-pt2-asynchrone-et-slice-060226">JS en gros pt.2 : Asynchrone et slice (06/02/26)</h1>
 <h2 id="asynchrone-et-promesses-promise">Asynchrone et promesses (promise)</h2>
-<h3 id="1-le-monde-sans-asynchrone-lenfer">1. Le monde SANS Asynchrone (L'enfer)</h3>
-<p>C'est le mode <strong>bloquant</strong>.</p>
+<h2 id="cest-quoi-asynchrone">C'est quoi Asynchrone ?</h2>
+<blockquote>
+<p>Rien de mieux qu'un exemple concret en amont</p>
+</blockquote>
+<h3 id="1-sans-asynchrone">1. SANS Asynchrone</h3>
 <ol>
 <li>Tu commandes un Big Mac.</li>
 <li>La caissière part en cuisine.</li>
@@ -861,8 +875,7 @@
 </ol>
 <p><strong>Résultat :</strong> La file d'attente sort du restaurant. Si la cuisson prend 10 minutes, tout le restaurant est bloqué pendant 10 minutes. C'est nul.</p>
 <hr />
-<h3 id="2-le-monde-avec-asynchrone-la-vie-reelle">2. Le monde AVEC Asynchrone (La vie réelle)</h3>
-<p>C'est le mode <strong>non-bloquant</strong>.</p>
+<h3 id="2-avec-asynchrone">2. AVEC Asynchrone</h3>
 <ol>
 <li>Tu commandes un Big Mac.</li>
 <li>La caissière crie en cuisine "Un Big Mac !".</li>
@@ -871,7 +884,10 @@
 <li>Toi, tu vas t'asseoir et tu attends (tu peux regarder ton téléphone, parler, vivre ta vie).</li>
 </ol>
 <hr />
-<h3 id="3-cest-quoi-la-promise">3. C'est quoi la "Promise" ?</h3>
+<blockquote>
+<p>Asynchrone permet de ne pas bloquer le code même si il n'a pas de résultat mais avec promesse, il laisse le code continuer pour trouver une réponse et la rapporter comme promis.</p>
+</blockquote>
+<h3 id="3-cest-quoi-cette-promesse-promise">3. C'est quoi cette promesse ? (Promise)</h3>
 <p>Dans l'histoire du McDo, <strong>la Promise, c'est le Bip-Bip.</strong></p>
 <p>Ce boîtier est une promesse. Le restaurant te dit : <em>"Je n'ai pas ton burger tout de suite, mais je te promets que je te préviendrai dès qu'il s'est passé quelque chose."</em></p>
 <p>Une Promise (le Bip-Bip) a toujours <strong>3 états possibles</strong>, et seulement 3 :</p>
@@ -880,7 +896,7 @@
 <li><strong>Succès (Resolved) :</strong> Le boîtier vibre ! La promesse est tenue, tu as ton burger (la donnée est arrivée).</li>
 <li><strong>Échec (Rejected) :</strong> Le manager arrive et te dit <em>"Désolé, la cuisine a pris feu, pas de burger"</em>. La promesse est rompue (il y a une erreur).</li>
 </ol>
-<h3 id="retour-au-code-check-filesjs">Retour au code (check-files.js)</h3>
+<h2 id="exemple-avec-check-files-tp-2">Exemple avec check-files (TP 2)</h2>
 <p>Quand tu écris ce code :</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">stats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fs</span><span class="p">.</span><span class="nx">stat</span><span class="p">(</span><span class="nx">filename</span><span class="p">);</span>
 </code></pre></div>
@@ -892,7 +908,6 @@
 <li><strong>Try</strong> : Si le Bip-Bip sonne (Succès), tu manges (tu affiches la taille).</li>
 <li><strong>Catch</strong> : Si la cuisine brûle (Erreur, le fichier n'existe pas), tu gères la crise sans mourir (tu affiches le message d'erreur).</li>
 </ul>
-<p>C'est plus clair avec cette image ?</p>
 
 
 
