@@ -655,7 +655,7 @@
   <span class="md-ellipsis">
     
   
-    Trucs à savoir
+    Cours
   
 
     
@@ -671,7 +671,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Trucs à savoir
+    Cours
   
 
           </label>
@@ -712,14 +712,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../learn/2026-30-01/" class="md-nav__link">
+      <a href="../../learn/javascript/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Javascript en gros (30/01/26)
+    Javascript en gros
   
 
     
@@ -1023,10 +1023,10 @@
 <p><em>celle de grabber pour l'exemple</em></p>
 <div class="highlight"><pre><span></span><code>BDD (Etape 1) - grabberman
 ├── TABLES (Etape 2) - COMPUTERS
-    ├── Colonne (Etape 3) - PcId, entier/clé primaire
-        └── Donnée (Etape 4)
-    ├── Colonne (Etape 3) - Hostname, chaîne de charactère
-    └── Colonne (Etape 3) - MacAddress, chaîne de charactère
+│   ├── Colonne (Etape 3) - PcId, entier/clé primaire
+│   │   └── Donnée (Etape 4)
+│   ├── Colonne (Etape 3) - Hostname, chaîne de charactère
+│   └── Colonne (Etape 3) - MacAddress, chaîne de charactère
 └── TABLES (Etape 2) - EMPLOYEES
     ├── Colonne (Etape 3) - UserId, entier/clé primaire
     ├── Colonne (Etape 3) - Username, chaîne de charactère
@@ -1035,12 +1035,12 @@
 <h3 id="etape-1-creer-une-bdd">Etape 1 : Créer une BDD</h3>
 <p><code>sqlite3 grabberman.db</code> &lt;- Commande qui crée une DB qu'on appellera ici "grabberman"</p>
 <h3 id="etape-2-creer-une-table">Etape 2 : Créer une table</h3>
-<div class="highlight"><pre><span></span><code>CREATE TABLE &quot;COMPUTERS&quot; 
-(
-    PcId INTEGER PRIMARY KEY AUTOINCREMENT, 
-    Hostname VARCHAR(50) NOT NULL, 
-    MacAddress VARCHAR(50)
-);
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">&quot;COMPUTERS&quot;</span><span class="w"> </span>
+<span class="p">(</span>
+<span class="w">    </span><span class="n">PcId</span><span class="w"> </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">Hostname</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">MacAddress</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="p">);</span>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1053,12 +1053,12 @@
 <p>Pour ajouter une donnée dans une tableau, on <strong>INSERE</strong> dans le <strong>TABLEAU</strong> donné les <strong>VALEURS</strong> dans les <strong>Colonnes</strong></p>
 </div>
 <h3 id="etape-4-creer-un-autre-tableau-avec-une-cle-liee-foreign-key">Etape 4 : Créer un autre tableau avec une clé liée (foreign key)</h3>
-<div class="highlight"><pre><span></span><code>CREATE TABLE &quot;EMPLOYEES&quot; 
-(
-    UserId INTEGER PRIMARY KEY AUTOINCREMENT, 
-    Username VARCHAR(50) NOT NULL, 
-    FOREIGN KEY (PcId) REFERENCES COMPUTERS(PcId)
-);
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="ss">&quot;EMPLOYEES&quot;</span><span class="w"> </span>
+<span class="p">(</span>
+<span class="w">    </span><span class="n">UserId</span><span class="w"> </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTOINCREMENT</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">Username</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">PcId</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">COMPUTERS</span><span class="p">(</span><span class="n">PcId</span><span class="p">)</span>
+<span class="p">);</span>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>

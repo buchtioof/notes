@@ -633,7 +633,7 @@
   <span class="md-ellipsis">
     
   
-    Trucs à savoir
+    Cours
   
 
     
@@ -649,7 +649,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Trucs à savoir
+    Cours
   
 
           </label>
@@ -690,14 +690,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../learn/2026-30-01/" class="md-nav__link">
+      <a href="../../learn/javascript/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Javascript en gros (30/01/26)
+    Javascript en gros
   
 
     
@@ -969,37 +969,73 @@
 <p>Depuis le début, beaucoup de commandes on été utilisées, du coup je note ici les commandes utilisées depuis le début et a quoi elles servent en gros</p>
 </blockquote>
 <h3 id="commandes-de-base">Commandes de base</h3>
-<p><code>sudo [commande]</code>
-- lance la commande avec les superdroits, peut manipuler tout le pc avec en gros</p>
-<p><code>ls [options] [fichier|dir]</code>
-- liste les fichiers d'un dossier
-- -a pour afficher les fichiers cachés / -l pour afficher en liste avec plus d'infos</p>
-<p><code>cd [dir]</code>
-- changer de dossier
-- ~ pour aller au répertoire home / .. pour revenir en arriere</p>
-<p><code>pwd</code>
-- affiche le répertoire actuel</p>
-<p><code>touch [fichier]</code>
-- affiche le contenu d'un fichier</p>
-<p><code>nano [fichier]</code>
-- éditeur de texte</p>
-<p><code>mkdir [options] [fichier|dir]</code>
-- supprime ce qu'on lui donne</p>
-<p><code>rm [options] [fichier|dir]</code>
-- supprime ce qu'on lui donne
-- -r pour supprimer un dossier et son contenu (recursive) (<code>rmdir</code> le fait aussi) / -f force la commande</p>
-<p><code>cp [options] [source] [destination]</code>
-- copie</p>
-<p><code>mv [options] [source] [destination]</code>
-- déplace</p>
+<ol>
+<li>
+<p><strong>sudo</strong> : lance une commande avec les superdroits, peut manipuler tout le pc avec en gros
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span><span class="o">[</span>commande<span class="o">]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>ls</strong> : liste les fichiers d'un dossier
+<div class="highlight"><pre><span></span><code><span class="c1"># -a pour afficher les fichiers cachés / -l pour afficher en liste avec plus d&#39;infos</span>
+ls<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span><span class="o">[</span>fichier<span class="p">|</span>dir<span class="o">]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>cd</strong> : changer de dossier
+<div class="highlight"><pre><span></span><code><span class="c1"># ~ pour aller au répertoire home / .. pour revenir en arriere</span>
+<span class="nb">cd</span><span class="w"> </span><span class="o">[</span>dir<span class="o">]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>pwd</strong> : affiche le répertoire actuel
+<div class="highlight"><pre><span></span><code><span class="nb">pwd</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>touch</strong> : affiche le contenu d'un fichier
+<div class="highlight"><pre><span></span><code>touch<span class="w"> </span><span class="o">[</span>fichier<span class="o">]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>nano</strong> : éditeur de texte
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span><span class="o">[</span>fichier<span class="o">]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>mkdir</strong> : supprime ce qu'on lui donne
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span><span class="o">[</span>fichier<span class="p">|</span>dir<span class="o">]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>rm</strong> : supprime ce qu'on lui donne
+<div class="highlight"><pre><span></span><code><span class="c1"># -r pour supprimer un dossier et son contenu (recursive) (`rmdir` le fait aussi)</span>
+<span class="c1"># -f force la commande</span>
+rm<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span><span class="o">[</span>fichier<span class="p">|</span>dir<span class="o">]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>cp</strong> : copie...
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span><span class="o">[</span>source<span class="o">]</span><span class="w"> </span><span class="o">[</span>destination<span class="o">]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>mv</strong> : ...et déplace
+<div class="highlight"><pre><span></span><code>mv<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span><span class="o">[</span>source<span class="o">]</span><span class="w"> </span><span class="o">[</span>destination<span class="o">]</span>
+</code></pre></div></p>
+</li>
+</ol>
 <h3 id="les-caracteres-dassociations">Les caractères d'associations</h3>
-<p><code>|</code> (le pipe)
-- prend le résultat de la commande de gauche et le donne à celle de droite
-- ex: <code>ls -la | grep "***"</code> (liste tout, mais n'affiche que les lignes avec "***")</p>
-<p><code>&gt;</code> et <code>&gt;&gt;</code>
-- envoie le résultat d'une commande dans un fichier texte
-- <code>&gt;</code> écrase le fichier / <code>&gt;&gt;</code> ajoute à la fin sans effacer
-- ex: <code>echo "coucou" &gt; fichier.txt</code></p>
+<p><code>|</code> (le pipe) -&gt; prend le résultat de la commande de gauche et le donne à celle de droite</p>
+<p><em>exemple : liste tout un répertoire, mais n'affiche que les résultats qui sont "feur"</em>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-la<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;feur&quot;</span>
+</code></pre></div></p>
+<p><code>&gt;</code> et <code>&gt;&gt;</code></p>
+<ul>
+<li>envoie le résultat d'une commande dans un fichier texte</li>
+<li><code>&gt;</code> écrase le fichier / <code>&gt;&gt;</code> ajoute à la fin sans effacer</li>
+<li>ex: <code>echo "coucou" &gt; fichier.txt</code></li>
+</ul>
 <h3 id="permissions-et-utilisateurs">Permissions et Utilisateurs</h3>
 <p><code>chmod [droits] [fichier]</code>
 - change les permissions d'un fichier (qui peut lire/écrire/exécuter)
