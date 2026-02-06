@@ -865,20 +865,20 @@
 </blockquote>
 <h3 id="1-sans-asynchrone">1. SANS Asynchrone</h3>
 <ol>
-<li>Tu commandes un Big Mac.</li>
-<li>La caissière part en cuisine.</li>
-<li>Elle fait cuire la viande elle-même.</li>
-<li>Elle coupe la salade.</li>
-<li>Elle met tout dans la boîte.</li>
-<li>Elle revient et te donne le Big Mac.</li>
-<li><strong>SEULEMENT MAINTENANT</strong>, elle prend la commande du client suivant.</li>
+<li>Tu commandes un Tasty Crousty.</li>
+<li>Le caissier part en cuisine.</li>
+<li>Il fait cuire le riz lui-même.</li>
+<li>Il coupe les tenders.</li>
+<li>Il met tout dans la barquette.</li>
+<li>Il revient et te donne le Tasty Crousty 67 doro party.</li>
+<li><strong>SEULEMENT MAINTENANT</strong>, il prend la commande du gwer suivant.</li>
 </ol>
-<p><strong>Résultat :</strong> La file d'attente sort du restaurant. Si la cuisson prend 10 minutes, tout le restaurant est bloqué pendant 10 minutes. C'est nul.</p>
+<p><strong>Résultat :</strong> La file d'attente sort du restaurant. Si la cuisson prend 10 minutes, tout le restaurant est bloqué pendant 10 minutes. C'est bien guez.</p>
 <hr />
 <h3 id="2-avec-asynchrone">2. AVEC Asynchrone</h3>
 <ol>
-<li>Tu commandes un Big Mac.</li>
-<li>La caissière crie en cuisine "Un Big Mac !".</li>
+<li>Tu commandes un chicken rouge du 129.</li>
+<li>La caissière crie en cuisine "Un Poulet rouge !".</li>
 <li>Elle te donne un <strong>Bip-Bip</strong> (le petit boîtier qui vibre).</li>
 <li>Elle passe <strong>immédiatement</strong> au client suivant.</li>
 <li>Toi, tu vas t'asseoir et tu attends (tu peux regarder ton téléphone, parler, vivre ta vie).</li>
@@ -888,25 +888,25 @@
 <p>Asynchrone permet de ne pas bloquer le code même si il n'a pas de résultat mais avec promesse, il laisse le code continuer pour trouver une réponse et la rapporter comme promis.</p>
 </blockquote>
 <h3 id="3-cest-quoi-cette-promesse-promise">3. C'est quoi cette promesse ? (Promise)</h3>
-<p>Dans l'histoire du McDo, <strong>la Promise, c'est le Bip-Bip.</strong></p>
-<p>Ce boîtier est une promesse. Le restaurant te dit : <em>"Je n'ai pas ton burger tout de suite, mais je te promets que je te préviendrai dès qu'il s'est passé quelque chose."</em></p>
+<p>Dans les exemples, <strong>la Promise, c'est le Bip-Bip.</strong></p>
+<p>Ce boîtier est une promesse. Le restaurant te dit : <em>"Je n'ai pas ton chicken tout de suite, mais je te promets que je te préviendrai dès qu'il s'est passé quelque chose."</em></p>
 <p>Une Promise (le Bip-Bip) a toujours <strong>3 états possibles</strong>, et seulement 3 :</p>
 <ol>
-<li><strong>En attente (Pending) :</strong> Le boîtier ne fait rien. Le cuistot travaille. Tu attends.</li>
-<li><strong>Succès (Resolved) :</strong> Le boîtier vibre ! La promesse est tenue, tu as ton burger (la donnée est arrivée).</li>
-<li><strong>Échec (Rejected) :</strong> Le manager arrive et te dit <em>"Désolé, la cuisine a pris feu, pas de burger"</em>. La promesse est rompue (il y a une erreur).</li>
+<li><strong>En attente (Pending) :</strong> Le boîtier ne fait rien. Le pani-puri travaille. Tu attends.</li>
+<li><strong>Succès (Resolved) :</strong> Le boîtier vibre ! La promesse est tenue, tu as ton chicken (la donnée est arrivée).</li>
+<li><strong>Échec (Rejected) :</strong> Le manager arrive et te dit <em>"Désolé, la cuisine a pris feu, pas de délicieux chicken rouge du 129 pour ce soir"</em>. La promesse est rompue (il y a une erreur).</li>
 </ol>
 <h2 id="exemple-avec-check-files-tp-2">Exemple avec check-files (TP 2)</h2>
 <p>Quand tu écris ce code :</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">stats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fs</span><span class="p">.</span><span class="nx">stat</span><span class="p">(</span><span class="nx">filename</span><span class="p">);</span>
 </code></pre></div>
 <ul>
-<li><strong><code>fs.stat</code></strong> : C'est toi qui commandes le burger (tu demandes les infos du fichier).</li>
+<li><strong><code>fs.stat</code></strong> : C'est toi qui commandes le chicken (tu demandes les infos du fichier).</li>
 <li><strong>La Promise</strong> : C'est Node.js qui te donne le Bip-Bip.</li>
 <li><strong><code>await</code></strong> : C'est toi qui décides de ne pas commencer à manger tant que le Bip-Bip n'a pas sonné. Tu te "figes" à cette ligne jusqu'à ce que le résultat arrive.</li>
 <li>**Le <code>try / catch**</code> :</li>
 <li><strong>Try</strong> : Si le Bip-Bip sonne (Succès), tu manges (tu affiches la taille).</li>
-<li><strong>Catch</strong> : Si la cuisine brûle (Erreur, le fichier n'existe pas), tu gères la crise sans mourir (tu affiches le message d'erreur).</li>
+<li><strong>Catch</strong> : Si la cuisine brûle (Erreur, le fichier n'existe pas), tu gères la crise sans pleurer comme une gonzesse (je rigole) (tu affiches le message d'erreur).</li>
 </ul>
 
 
