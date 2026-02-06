@@ -1,6 +1,10 @@
 # Notes de ramzgang
 
-<img src="https://media1.tenor.com/m/-P-WHkN0ZZUAAAAd/asda.gif" alt="drake (moi) t'aidant avec mes notes remplies de bonne volontés" width="300" height="200">
+notes en cours de Devops et info en général crée avec [zensical](https://github.com/zensical/zensical)
 
-drake (moi) t'aidant avec mes notes remplies de bonne volontés
+pour lancer le serveur localement
+1. cloner ce git
+2. créer un environnement virtuel python dans le dossier
+3. installer zensical : `pip install zensical`
+4. lancer le serveur zensical : `zensical serve`
 
