@@ -1,4 +1,4 @@
-# Notes de ramzgang
+# Notes de devops
 
 notes en cours de Devops et info en général crée avec [zensical](https://github.com/zensical/zensical)
 
