@@ -1042,6 +1042,18 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#cerveau-serveur-api-via-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cerveau serveur : API via Django
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cerveau serveur : API via Django">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#deploiement-dalfred" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1078,7 +1090,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Protection de l&#x27;API avec un &quot;Secret Partagé&quot;">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#panel-admin-django" class="md-nav__link">
@@ -1095,17 +1108,27 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#vue-densemble-du-projet-et-conclusions" class="md-nav__link">
+  <a href="#vue-densemble-du-projet-et-conclusions-projet-a-finir-avant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vue d'ensemble du projet et Conclusions
+        Vue d'ensemble du projet et Conclusions (Projet à finir avant)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Vue d&#x27;ensemble du projet et Conclusions">
+    <nav class="md-nav" aria-label="Vue d&#x27;ensemble du projet et Conclusions (Projet à finir avant)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1396,6 +1419,18 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#cerveau-serveur-api-via-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cerveau serveur : API via Django
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cerveau serveur : API via Django">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#deploiement-dalfred" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1432,7 +1467,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Protection de l&#x27;API avec un &quot;Secret Partagé&quot;">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#panel-admin-django" class="md-nav__link">
@@ -1449,17 +1485,27 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#vue-densemble-du-projet-et-conclusions" class="md-nav__link">
+  <a href="#vue-densemble-du-projet-et-conclusions-projet-a-finir-avant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Vue d'ensemble du projet et Conclusions
+        Vue d'ensemble du projet et Conclusions (Projet à finir avant)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Vue d&#x27;ensemble du projet et Conclusions">
+    <nav class="md-nav" aria-label="Vue d&#x27;ensemble du projet et Conclusions (Projet à finir avant)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1524,7 +1570,7 @@
 <h3 id="besoin">Besoin</h3>
 <p>Grabber part d'un besoin de gérer un petit parc informatique (dizaines d'ordinateurs) dans un espace de travail (type entreprise). On peut déja noter certains besoins majeurs : <strong>gérer des ordinateurs à distance</strong>, <strong>connaitre d'un coup d'oeil leur état</strong> (updates, hardware, software) et <strong>établir une liste de liens entre ordinateurs et employés</strong>.</p>
 <h3 id="solution">Solution</h3>
-<p>Grabber donc serait dans l'idée capable de répondre à ces besoins, via une interface web administrateur consultable par le DSI d'une entreprise par exemple. Pour la gestion d'un parc informatique de petite taille/toute petite, on proposera un produit simple, léger et plug and play. Via une simple commande de terminal et une configuration au préalable des ordinateurs cibles capable de recevoir des requêtes SSH, Grabber sera capable de couvrir un maximum des besoins.</p>
+<p>Grabber donc serait dans l'idée capable de répondre à ces besoins, via une interface web administrateur consultable par la DSI d'une entreprise par exemple. Pour la gestion d'un parc informatique de petite taille/toute petite, on proposera un produit simple, léger et plug and play. Via une simple commande de terminal et une configuration au préalable des ordinateurs cibles capable de recevoir des requêtes SSH, Grabber sera capable de couvrir un maximum des besoins.</p>
 <h2 id="choix-de-la-stack-technologique">Choix de la stack technologique</h2>
 <p>Le projet en général se basera sur du Bash et du Python pour gérer l'API et le panel Admin.</p>
 <h3 id="-bash">-&gt; <em>Bash</em></h3>
@@ -1555,10 +1601,11 @@
 <p>-&gt; Envoyer les données via une requête à l'endpoint du serveur Django (avec une requête HTTP POST curl)</p>
 <p>-&gt; Renvoyer le token de session pour sécuriser la communication</p>
 <p>-&gt; Le tout est codé dans un paquet .run qui contient les librairies requises comme jq et inxi pour être utilisable sur un maximum d'ordinateurs Linux (compilé avec makeself)</p>
-<h3 id="deploiement-dalfred">Déploiement d'Alfred</h3>
+<h3 id="cerveau-serveur-api-via-django">Cerveau serveur : API via Django</h3>
+<h4 id="deploiement-dalfred">Déploiement d'Alfred</h4>
 <p>Pour déployer Alfred sur une machine, on utilisera SSH pour envoyer le script dans un PC cible. On veut que cette tâche soit lancée directement depuis le panel Admin.</p>
 <p>Pour se faire, on délègue celle-ci à Python avec Django qui l'effectuera avec un formulaire qui contient l'IP sur laquelle aller, le username et le mot de passe du SSH cible.</p>
-<h4 id="requete-avec-paramiko">Requête avec Paramiko</h4>
+<h5 id="requete-avec-paramiko">Requête avec Paramiko</h5>
 <p>C'est la solution trouvée pour gérer cette demande, Paramiko est une librairie Python installable avec pip qui peut établir la session SSH et le fera depuis le backend Django (dans views.py -&gt; fonction deploy_ssh)</p>
 <p>Le cycle de la requête est le suivant :</p>
 <pre><code>-&gt; Connexion SSH à la cible.
@@ -1570,30 +1617,16 @@
 
 -&gt; Nettoyage des traces (rm /tmp/alfred.run).
 </code></pre>
-<h3 id="protection-de-lapi-avec-un-secret-partage">Protection de l'API avec un "Secret Partagé"</h3>
-<p>Pourquoi éviter le CSRF pour une API machine ? Les limites de l'authentification par navigateur pour des scripts automatisés.</p>
-<p>Rotation dynamique des clés (Token) : * Explication de la génération du SESSION_TOKEN (via openssl rand) à chaque lancement de grabber.sh.</p>
-<p>Injection dans settings.json lu par Django (config/settings.py).</p>
-<p>Nettoyage sécurisé (Trap) : L'utilisation de trap dans le lanceur Bash pour effacer le token du JSON à la fermeture du serveur (Ctrl+C), évitant de laisser des identifiants sensibles en clair.</p>
-<p>La validation côté Django (api.py) : Comment la vue receive_system_info compare le header HTTP_X_API_KEY avec le token mémorisé avant d'accepter les données.</p>
-<h3 id="panel-admin-django">Panel Admin (Django)</h3>
-<pre><code>7.1. Le modèle de données (models.py) : Présentation de la table SystemInfo, avec l'adresse MAC comme clé d'unicité (pour mettre à jour un PC existant plutôt que de le dupliquer).
-
-7.2. L'expérience utilisateur (HTML/CSS/JS) :
-
-    Affichage propre des données récupérées.
-
-    Gestion des erreurs SSH avec les messages Django (succès/échec).
-
-    L'ajout d'un script JavaScript (Spinner de chargement) lors du déploiement SSH pour éviter les clics multiples.
-</code></pre>
-<h2 id="vue-densemble-du-projet-et-conclusions">Vue d'ensemble du projet et Conclusions</h2>
+<h4 id="protection-de-lapi-avec-un-secret-partage">Protection de l'API avec un "Secret Partagé"</h4>
+<p>Comme dit plus tôt, grabber.sh génère un token de session (SESSION_TOKEN avec la commande "openssl rand") à chaque lancement de grabber.sh, puis ce token est stockée dans settings.json pendant la session et se reset à la fermeture de la session (commande trap qui lance la fonction cleanup).</p>
+<p>Ce token lui est stocké dans une variable Python depuis les settings.py qui se charge de lire les settings.json, fetch la clé et la stocke.</p>
+<p>Enfin, lorsqu'une requête par Alfred est émise, Django vérifie cette clé d'abord dans api.py. Il fetch la clé dans la requête curl et la range dans une variable <em>key</em> puis teste si le token est correspondant à celui dans les settings.json. Si c'est bon, tout va bien, sinon il indique l'erreur avec la clé.</p>
+<h5 id="panel-admin-django">Panel Admin (Django)</h5>
+<p>Enfin, le Panel Admin. Fonctionne avec Django, il part du modèle de données (models.py) et présente dans une interface HTML/CSS/JS la table SystemInfo avec l'adresse MAC comme clé principale pour chaque PC. Le tout est sécurisé avec le login admin de Django.</p>
+<h2 id="vue-densemble-du-projet-et-conclusions-projet-a-finir-avant">Vue d'ensemble du projet et Conclusions (Projet à finir avant)</h2>
 <h3 id="difficultes-rencontrees-et-apprentissages">Difficultés rencontrées et apprentissages</h3>
 <h3 id="bilan">Bilan</h3>
 <h3 id="axes-damelioration">Axes d'amélioration</h3>
-<p>Passer le déploiement SSH sur un système de clés asymétriques (Clés Publiques/Privées) plutôt que par mot de passe.</p>
-<p>Déploiement du serveur maître via Docker pour une approche 100% "Release".</p>
-<p>Ajout d'un historique de l'état (ex: voir si un PC est hors ligne depuis X jours).</p>
 
 
   <nav class="md-tags" >
