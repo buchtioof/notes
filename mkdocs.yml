@@ -50,9 +50,18 @@ extra_css:
 
 nav:
   - Accueil: index.md
-  - Cours:
+  - Notes:
+    - 🧰 SysAdmin:
+      - learn/sysadmin/2026-03-04.md
+      - 🐧 Linux:
+        - learn/sysadmin/linux/2025-10-30.md
+        - learn/sysadmin/linux/2025-10-31.md
+      - 📚 Bases du Bash:
+        - learn/sysadmin/bash/2025-11-27.md
+        - learn/sysadmin/bash/2025-11-28.md
+      - learn/sysadmin/2026-02-25.md
     - 🔌 DevOps:
-      - learn/devops/2025-10-30.md
+      - learn/devops/2026-03-04.md
       - learn/devops/2025-11-28.md
       - learn/devops/2025-12-12.md
       - learn/devops/2026-01-22.md
@@ -64,7 +73,8 @@ nav:
     - 🐍 Python :
       - learn/python/2026-01-16.md
       - learn/python/2026-02-16.md
-    - learn/2026-02-21.md
+    - 🎨 Frontend :
+      - learn/frontend/2026-02-21.md
   - Projets:
     - projects/2025-12-05.md
     - projects/2026-01-23.md
