@@ -3,6 +3,7 @@ repo_name: buchtioof/notes
 repo_url: https://github.com/buchtioof/notes
 
 theme:
+  logo: assets/logo.svg
   features:
     - navigation.instant
   palette:
