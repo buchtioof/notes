@@ -2,10 +2,10 @@
 
 # Bienvenue dans mes notes de devops
 
-## Structure
+je note mon parcours et mes projets en SysAdmin
 
--> cours (Notes sur les cours)
+## Sommaire
 
--> projects (Notes sur des nouveaux projets) 
+-> Notes *notes de cours, apprentissages en dehors, un peu de tout*
 
--> liens cools (mes sites favoris)
+-> Projets *notes sur mes projets de cours/personnels, note de mes experiences*
