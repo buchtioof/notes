@@ -77,7 +77,8 @@ nav:
     - 🎨 Frontend :
       - learn/frontend/2026-02-21.md
   - Projets:
-    - Stage: 
+    - Stage:
+      - projects/stage/main.md
       - projects/stage/2026-03-03.md
       - projects/stage/2026-03-09.md
     - projects/2025-12-05.md
